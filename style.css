@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFDE40;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 17px;
+    background-color: #FFDE40;
+}
+
+.header__logo {
+    width: 158px;
+    height: 45px;
+}
+
+.header__ul {
+    max-width: 772px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 23px 20px;
+    justify-content: center;
+}
+
+.header__ul-item {
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.header__ul-item:last-child {
+    margin: 0;
+}
+
+.header__ul-item a{
+    text-decoration: none;
+    font-family: YandexSansTextRegular-600;
+    color: #21201f;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.header__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: YandexSansTextRegular-600;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 45px;
+    white-space: nowrap;
+    border-radius: 18px;
+    padding: 0 12px;
+    background: #21201F;
+    width: 176px;
+    min-width: 105px;
+    height: 45px;
+}
+
+.hero {
+    margin-top: 147px;
+    width: 954px;
+    padding: 146px 17px 32px;
+    position: relative;
+}
+
+.hero__name-visibility {
+    visibility: hidden;
+}
+
+.hero__img-name {
+    position: absolute;
+    top: 146px;
+    height: 100%;
+    height: 286px;
+}
+
+.hero__text {
+    position: absolute;
+    top: 551px;
+    max-width: 550px;
+    font-weight: 600;
+    color: #21201F;;
+    letter-spacing: normal;
+    font-family: YandexSansTextRegular-900;
+    font-size: 36px;
+    line-height: 39.6px;
+}
+
+.hero__img {
+    position: absolute;
+    width: 466px;
+    height: 568px;
+    top: 71px;
+    right: 17px;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-light.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-light-italic.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-light-italic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular-italic.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-regular-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium-italic.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-medium-italic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-bold.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/text-bold-italic.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/text-bold-italic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Display';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/display-thin.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/display-thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Display';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/display-light.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/display-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Display';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/display-regular.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/display-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Display';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/display-medium.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/display-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Display';
+    src: url('https://yastatic.net/s3/home/fonts/ys/4/display-bold.woff') format('woff'),url('https://yastatic.net/s3/home/fonts/ys/4/display-bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'YS Display';
+    src: url('https://yastatic.net/s3/home/fonts/ys/1/display-heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "YandexSansTextRegular-900";
+    src: url("https://yastatic.net/s3/lpc-ext/static/_fonts/YandexSansTextRegular-wght-900.woff") format("woff");
+    font-weight: 900;
+}
+  
+@font-face {
+    font-family: "YandexSansTextRegular-600";
+    src: url("https://yastatic.net/s3/lpc-ext/static/_fonts/YandexSansTextRegular-wght600.woff") format("woff");
+    font-weight: 600;
+}
