@@ -9,19 +9,23 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"
-        ><img
-          class="header__logo"
-          src="https://avatars.mds.yandex.net/get-lpc/1527204/8f3ee15e-98b2-4cef-9df3-76b37618f92e/orig"
-          alt="logo"
-      /></a>
-      <ul class="header__ul">
-        <li class="header__ul-item"><a href="#">Как арендовать самокат</a></li>
-        <li class="header__ul-item"><a href="#">Катайтесь с Плюсом</a></li>
-        <li class="header__ul-item"><a href="#">Катайтесь аккуратно</a></li>
-        <li class="header__ul-item"><a href="#">Где самокаты?</a></li>
-      </ul>
-      <a class="header__button" href="#">Скачать</a>
+      <div class="header__box">
+        <a href="#"
+          ><img
+            class="header__logo"
+            src="https://avatars.mds.yandex.net/get-lpc/1527204/8f3ee15e-98b2-4cef-9df3-76b37618f92e/orig"
+            alt="logo"
+        /></a>
+        <ul class="header__ul">
+          <li class="header__ul-item">
+            <a href="#">Как арендовать самокат</a>
+          </li>
+          <li class="header__ul-item"><a href="#">Катайтесь с Плюсом</a></li>
+          <li class="header__ul-item"><a href="#">Катайтесь аккуратно</a></li>
+          <li class="header__ul-item"><a href="#">Где самокаты?</a></li>
+        </ul>
+        <a class="header__button" href="#">Скачать</a>
+      </div>
     </header>
 
     <main>
@@ -64,49 +68,59 @@
         </div>
       </section>
 
-      <h2>Как арендовать самокат</h2>
+      <section class="steps-group">
+        <div class="steps-group__box">
+          <h2 class="steps-group__box__title">Как арендовать самокат</h2>
 
-      <div>
-        <div>
-          <div>
-            <img
-              src="https://avatars.mds.yandex.net/get-lpc/403342/f97c3e9b-721d-4a02-b144-2e5a0a368654/orig"
-              alt="icon"
-            />
-            <p>В&nbsp;Яндекс&nbsp;Go&nbsp;нажмите кнопку «Самокаты»</p>
+          <div class="steps-group__box__box-items">
+            <div class="steps-group__box__box-items__cards">
+              <div class="steps-group__box__box-items__card">
+                <p class="steps-group__box__box-items__card-text">
+                  В&nbsp;Яндекс&nbsp;Go&nbsp;нажмите кнопку «Самокаты»
+                </p>
+              </div>
+              <div class="steps-group__box__box-items__card">
+                <p class="steps-group__box__box-items__card-text">
+                  Найдите на&nbsp;карте ближайшую парковку
+                </p>
+              </div>
+              <div class="steps-group__box__box-items__card">
+                <p class="steps-group__box__box-items__card-text">
+                  Дойдите до&nbsp;самоката и&nbsp;отсканируйте QR-код
+                  на&nbsp;руле
+                </p>
+                <img
+                  class="steps-group__box__box-items__card-image"
+                  src="https://avatars.mds.yandex.net/get-lpc/1364677/218f6fb2-1e57-4039-8eac-f0122a8e929f/orig"
+                  alt="icon"
+                />
+              </div>
+            </div>
+            <video
+              class="steps-group__box__box-items__video"
+              autoplay=""
+              playsinline=""
+              loop=""
+              muted=""
+              preload="auto"
+            >
+              <source
+                src="https://lpc-ext.s3.yandex.net/go_yandex/scooters/video/krd-02.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="https://lpc-ext.s3.yandex.net/go_yandex/scooters/video/krd-02.webm"
+                type="video/webm"
+              />
+            </video>
           </div>
-          <div>
-            <img
-              src="https://avatars.mds.yandex.net/get-lpc/1370085/80de62cf-bad2-4b16-ae0a-00f66cf01e80/orig"
-              alt="icon"
-            />
-            <p>Найдите на&nbsp;карте ближайшую парковку</p>
-          </div>
-          <div>
-            <img
-              src="https://avatars.mds.yandex.net/get-lpc/1370085/c0430b62-e7b0-48b2-9f8e-757dcfaee867/orig"
-              alt="icon"
-            />
-            <p>
-              Дойдите до&nbsp;самоката и&nbsp;отсканируйте QR-код на&nbsp;руле
+          <div class="steps-group__box__text-box">
+            <p class="steps-group__box__text">
+              Готово! Выбирайте тариф, и&nbsp;можно ехать
             </p>
           </div>
         </div>
-        <video src="">
-          <source
-            src="https://avatars.mds.yandex.net/get-lpc/1364677/218f6fb2-1e57-4039-8eac-f0122a8e929f/orig"
-          />
-          <source
-            src="https://lpc-ext.s3.yandex.net/go_yandex/scooters/video/krd-02.webm"
-          />
-        </video>
-        <img
-          src="https://avatars.mds.yandex.net/get-lpc/1364677/218f6fb2-1e57-4039-8eac-f0122a8e929f/orig"
-          alt="icon"
-        />
-      </div>
-
-      <p>Готово! Выбирайте тариф, и&nbsp;можно ехать</p>
+      </section>
 
       <section class="items-group">
         <div class="items-group__box">
