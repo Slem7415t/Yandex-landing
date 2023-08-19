@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__box">
-        <a href="#"
+        <a href="https://go.yandex/" target="_blank"
           ><img
             class="header__logo"
             src="https://avatars.mds.yandex.net/get-lpc/1527204/8f3ee15e-98b2-4cef-9df3-76b37618f92e/orig"
@@ -18,13 +18,19 @@
         /></a>
         <ul class="header__ul">
           <li class="header__ul-item">
-            <a href="#">Как арендовать самокат</a>
+            <a href="#steps-group__title">Как арендовать самокат</a>
           </li>
-          <li class="header__ul-item"><a href="#">Катайтесь с Плюсом</a></li>
-          <li class="header__ul-item"><a href="#">Катайтесь аккуратно</a></li>
-          <li class="header__ul-item"><a href="#">Где самокаты?</a></li>
+          <li class="header__ul-item">
+            <a href="#about-plus-group__title">Катайтесь с Плюсом</a>
+          </li>
+          <li class="header__ul-item">
+            <a href="#video-group__title">Катайтесь аккуратно</a>
+          </li>
+          <li class="header__ul-item">
+            <a href="#map-group__text-title">Где самокаты?</a>
+          </li>
         </ul>
-        <a class="header__button" href="#">Скачать</a>
+        <a class="header__button" href="#download-group__text-title">Скачать</a>
       </div>
     </header>
 
@@ -45,7 +51,9 @@
             alt="picture"
             class="hero-group__box__img"
           />
-          <a class="hero-group__box__button" href="#">Скачать приложение</a>
+          <a class="hero-group__box__button" href="#download-group__text-title"
+            >Скачать приложение</a
+          >
         </div>
       </section>
 
@@ -60,17 +68,35 @@
             />
           </div>
           <div class="town-group__box__town-links">
-            <a href="#" class="town-group__box__town-link">Москва</a>
-            <a href="#" class="town-group__box__town-link">Санкт-Петербург</a>
-            <a href="#" class="town-group__box__town-link">Краснодар</a>
-            <a href="#" class="town-group__box__town-link">Тула</a>
+            <a
+              href="https://go.yandex/ru_ru/lp/rides/scooter"
+              class="town-group__box__town-link"
+              >Москва</a
+            >
+            <a
+              href="https://go.yandex/ru_ru/lp/rides/scooter/saint-petersburg"
+              class="town-group__box__town-link"
+              >Санкт-Петербург</a
+            >
+            <a
+              href="https://go.yandex/ru_ru/lp/rides/scooter/krasnodar"
+              class="town-group__box__town-link"
+              >Краснодар</a
+            >
+            <a
+              href="https://go.yandex/ru_ru/lp/rides/scooter/tula"
+              class="town-group__box__town-link"
+              >Тула</a
+            >
           </div>
         </div>
       </section>
 
       <section class="steps-group">
         <div class="steps-group__box">
-          <h2 class="steps-group__box__title">Как арендовать самокат</h2>
+          <h2 class="steps-group__box__title">
+            <span id="steps-group__title"></span>Как арендовать самокат
+          </h2>
 
           <div class="steps-group__box__box-items">
             <div class="steps-group__box__box-items__cards">
@@ -186,6 +212,7 @@
         <div class="about-plus-group__box">
           <div>
             <h2 class="about-plus-group__box__title">
+              <span id="about-plus-group__title"></span>
               Абонемент на&nbsp;самокаты в&nbsp;Яндекс Плюсе
             </h2>
             <p class="about-plus-group__box__text">
@@ -220,149 +247,152 @@
       <section class="video-group">
         <div class="video-group__box">
           <div class="video-group__box__video">
+            <span id="video-group__title"></span>
             <div class="video-group__box__video__button-left"></div>
             <div class="video-group__box__video__button-right"></div>
-            <div class="video-group__box__video__cards">
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be0554e-ca9878b3e384ce9b/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be0554e-ca9878b3e384ce9b/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be12814-d4349e064a96e559/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be12814-d4349e064a96e559/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be1a0ee-d835336e9d859e4a/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be1a0ee-d835336e9d859e4a/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-43474-17a7be21d43-cfb3f6c623bf8b7b/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-43474-17a7be21d43-cfb3f6c623bf8b7b/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a85a07b69-ac436aecf5e86a78/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a85a07b69-ac436aecf5e86a78/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be31056-f283c899f4d444f0/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be31056-f283c899f4d444f0/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be35fa3-95150f9a730d87/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be35fa3-95150f9a730d87/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be3bc45-8adfd7acc40bb5f1/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be3bc45-8adfd7acc40bb5f1/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-38232-17a7be46e2e-4900b1d2d2696114/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-38232-17a7be46e2e-4900b1d2d2696114/720p.webm"
-                  type="video/webm"
-                />
-              </video>
-              <video
-                class="video-group__box__video__cards__card"
-                controls=""
-                preload="auto"
-              >
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be4dec5-264e0ac54d3efdd0/720p.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be4dec5-264e0ac54d3efdd0/720p.webm"
-                  type="video/webm"
-                />
-              </video>
+            <div class="video-group__box__video__cards-box">
+              <div class="video-group__box__video__cards">
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be0554e-ca9878b3e384ce9b/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be0554e-ca9878b3e384ce9b/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be12814-d4349e064a96e559/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be12814-d4349e064a96e559/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be1a0ee-d835336e9d859e4a/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be1a0ee-d835336e9d859e4a/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-43474-17a7be21d43-cfb3f6c623bf8b7b/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-43474-17a7be21d43-cfb3f6c623bf8b7b/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a85a07b69-ac436aecf5e86a78/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a85a07b69-ac436aecf5e86a78/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be31056-f283c899f4d444f0/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be31056-f283c899f4d444f0/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be35fa3-95150f9a730d87/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-67230-17a7be35fa3-95150f9a730d87/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be3bc45-8adfd7acc40bb5f1/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-28644-17a7be3bc45-8adfd7acc40bb5f1/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-38232-17a7be46e2e-4900b1d2d2696114/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-38232-17a7be46e2e-4900b1d2d2696114/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+                <video
+                  class="video-group__box__video__cards__card"
+                  controls=""
+                  preload="auto"
+                >
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be4dec5-264e0ac54d3efdd0/720p.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://streaming.video.yandex.ru/get/yndx-video/m-42220-17a7be4dec5-264e0ac54d3efdd0/720p.webm"
+                    type="video/webm"
+                  />
+                </video>
+              </div>
             </div>
             <div class="video-group__box__video__items">
               <span class="video-group__box__video__items__item"></span>
@@ -494,7 +524,9 @@
 
       <section class="map-group">
         <div class="map-group__box">
-          <h2 class="map-group__box__text-title">Где есть самокаты</h2>
+          <h2 class="map-group__box__text-title">
+            <span id="map-group__text-title"></span>Где есть самокаты
+          </h2>
           <p class="map-group__box__text">
             Самокаты постепенно появляются в&nbsp;разных районах Краснодара.
             Карта в&nbsp;приложении покажет, где взять самокат
@@ -509,7 +541,9 @@
 
       <section class="download-group">
         <div class="download-group__box">
-          <h2 class="download-group__box__text-title">Скачайте приложение</h2>
+          <h2 class="download-group__box__text-title">
+            <span id="download-group__text-title"></span>Скачайте приложение
+          </h2>
           <p class="download-group__box__text">
             Наведите камеру на&nbsp;QR-код для загрузки приложения
           </p>
@@ -598,5 +632,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
