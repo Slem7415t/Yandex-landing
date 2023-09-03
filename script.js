@@ -1,14 +1,105 @@
+const cards = document.querySelector('.items-group__box__cards');
+const rightbtn = document.querySelector('.items-group__button__button-right');
+const leftbtn = document.querySelector('.items-group__button__button-left');
+
+let widthItem;
+let counItem = 0;
+
+function clickItem() {
+    widthItem = cards.offsetWidth;
+    cards.style.transitionDuration = '0.8s';
+    cards.style.transform = 'translate(-' + counItem * (widthItem + 34) + 'px)';
+}
+
+let a = 0;
+
+if (a < 2) {
+
+rightbtn.onclick = function() {
+
+        if (counItem < 2) {
+            counItem++;
+            a++;
+            clickItem();
+        }
+
+        if (a >= 1) {
+            leftbtn.style.cursor = 'pointer';
+            leftbtn.style.opacity = '1';
+        } else {
+            leftbtn.style.cursor = 'auto';
+            leftbtn.style.opacity = '0.5';
+        }
+
+        if (a >= 2) {
+            rightbtn.style.cursor = 'auto';
+            rightbtn.style.opacity = '0.5';
+
+        } else {
+            rightbtn.style.cursor = 'pointer';
+            rightbtn.style.opacity = '1';
+        }
+
+    }
+
+} else {
+
+    rightbtn.onclick = false;
+
+}
+
+if (a >= 0) {
+
+    leftbtn.onclick = function() {
+
+        if (counItem > 0) {
+            counItem--;
+            a--;
+            clickItem();
+        }
+       
+        if (a >= 1) {
+            leftbtn.style.cursor = 'pointer';
+            leftbtn.style.opacity = '1';
+
+            if (a < 1) {
+                leftbtn.style.cursor = 'auto';
+                leftbtn.style.opacity = '0.5';
+            }
+
+        } else {
+            leftbtn.style.cursor = 'auto';
+            leftbtn.style.opacity = '0.5';
+        }
+
+        if (a >= 2) {
+            rightbtn.style.cursor = 'auto';
+            rightbtn.style.opacity = '0.5';
+        } else {
+            rightbtn.style.cursor = 'pointer';
+            rightbtn.style.opacity = '1';
+        }
+
+    }
+
+} else {
+    leftbtn.onclick = false;
+
+}
+
 const sp = document.querySelector('.video-group__box__video__items').children;
 const right = document.querySelector('.video-group__box__video__button-right');
 const left = document.querySelector('.video-group__box__video__button-left');
 
 const videos = document.querySelector('.video-group__box__video__cards');
 
+let width;
 let count = 0;
-let width = videos.offsetWidth;
 
 function click() {
-    videos.style.transform = 'translate(-' + count * (width + 734) + 'px)';
+    width = videos.offsetWidth;
+    videos.style.transitionDuration = '0.8s';
+    videos.style.transform = 'translate(-' + count * (width + 34) + 'px)';
 }
 
 let x = 0;
@@ -90,9 +181,6 @@ if (x >= 0) {
             sp[y].style.opacity = '0.6';
             
             y--;
-
-            console.log(x);
-            console.log(y);
 
             if (y < 1) {
                 left.style.cursor = 'auto';
